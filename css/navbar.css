@@ -1,0 +1,48 @@
+ul li {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #121619 ;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+.nav-link{
+    color: #121619 !important;
+}
+.navbar{
+    background-color:rgba(255, 255, 255, 0.70);
+    color: black;
+    z-index: 10;
+    backdrop-filter: blur(11px);
+}
+
+.cur-page{
+    color: #583101 !important;
+}
+.navbar-brand{
+    font-family: "Playfair Display", Helvetica;
+    font-weight: 500 !important;
+    font-style: italic;
+    color: #583101;
+    font-size: 32px !important;
+}
+.nav-btn{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 16px 24px;
+    flex: 0 0 auto;
+    background-color: #583101;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #eff5ed;
+    font-size: 20px;
+    line-height: normal;
+}
+.bi-list{
+    color: #583101;
+}
