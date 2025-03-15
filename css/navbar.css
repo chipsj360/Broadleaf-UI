@@ -1,3 +1,49 @@
+logo {
+    max-height: 100px; /* Adjust the height as needed */
+    max-width: 100px; /* Adjust the width as needed */
+    border-radius: 50%; /* Create circular borders */
+    object-fit: cover;
+    position: relative;
+    top: 4px;
+    bottom: 20px;
+    left: 0;
+}
+
+/* Adjust size for medium screens */
+@media (max-width: 991.98px) {
+    .logo {
+        max-height: 80px; /* Adjust the height as needed */
+        max-width: 80px; /* Adjust the width as needed */
+    }
+}
+
+/* Adjust size for smaller screens */
+@media (max-width: 767.98px) {
+    .logo {
+        max-height: 100px; /* Adjust the height as needed */
+        max-width: 100px; /* Adjust the width as needed */
+    }
+}
+
+/* Adjust size for extra small screens */
+@media (max-width: 575.98px) {
+    .logo {
+        max-height: 100px; /* Adjust the height as needed */
+        max-width: 100px; /* Adjust the width as needed */
+    }
+}
+
+ul li {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #121619;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
 ul li {
     position: relative;
     width: fit-content;
@@ -46,3 +92,8 @@ ul li {
 .bi-list{
     color: #583101;
 }
+.navbar-toggler {
+    background-color: #ffffff; /* Change to a visible color */
+    border: 1px solid #000; /* Optional border */
+  }
+  
