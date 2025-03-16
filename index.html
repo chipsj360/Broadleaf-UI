@@ -48,47 +48,51 @@
         
 
 
-
+       
           <div class="position-relative text-white">
-            <img class="img-fluid w-100" alt="Real Estate" src="img/landing-page.png">
+            <img class="img-fluid w-100 hero-image" alt="Real Estate" src="img/landing-page.png">
             <div class="position-absolute top-50 start-0 translate-middle-y text-start p-3 ps-5">
                 <h2 class="fw-bold">Experience Real Estate On The Go</h2>
                 <b class="fs-4">Discover. Choose. Own</b>
                 <p class="mt-2">We are offering the best real estate deals. Buy, sell, and rent properties seamlessly, all in one platform.</p>
             </div>
-        </div>
-        <section class="search-section py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-4">
-                                    <input type="text" class="form-control" placeholder="Location">
+        
+            <!-- Search Form Positioned at the Bottom of Image -->
+            <section class="search-section position-absolute bottom-0 start-50 translate-middle-x w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <form>
+                                <div class="row g-3 bg-white p-3 rounded shadow">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Location">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-select">
+                                            <option selected>Category</option>
+                                            <option value="1">Residential</option>
+                                            <option value="2">Commercial</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-select">
+                                            <option selected>Property Type</option>
+                                            <option value="1">Apartment</option>
+                                            <option value="2">House</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="submit" class="btn btn-primary w-100">Search</button>
+                                    </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Category</option>
-                                        <option value="1">Residential</option>
-                                        <option value="2">Commercial</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Property Type</option>
-                                        <option value="1">Apartment</option>
-                                        <option value="2">House</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-2">
-                                    <button type="submit" class="btn btn-primary w-100">Search</button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        
+        
 
         <!-- <div class="webpage">
             <img class="landing-page"  />

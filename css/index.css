@@ -1,2 +1,24 @@
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
-  
+.search-section {
+    bottom: -50px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 10;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .search-section {
+        width: 95%;
+        bottom: -30px;
+    }
+}
