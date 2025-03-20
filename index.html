@@ -11,8 +11,12 @@
         <link rel="stylesheet" href="./css/globals.css" />
         <link rel="stylesheet" href="./css/styleguide.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/index.css" />
         <link rel="stylesheet" href="./css/navbar.css">
     </head>
+    <style>
+      
+    </style>
     <body>
         <nav class="navbar navbar-expand-lg position-sticky w-100">
             <div class="container ">
@@ -49,21 +53,27 @@
 
 
        
-          <div class="position-relative text-white">
-            <img class="img-fluid w-100 hero-image" alt="Real Estate" src="img/landing-page.png">
-            <div class="position-absolute top-50 start-0 translate-middle-y text-start p-3 ps-5">
-                <h2 class="fw-bold">Experience Real Estate On The Go</h2>
-                <b class="fs-4">Discover. Choose. Own</b>
-                <p class="mt-2">We are offering the best real estate deals. Buy, sell, and rent properties seamlessly, all in one platform.</p>
+          <div class="hero-section">
+            <div class="hero-overlay"></div>
+    
+            <!-- Login Button -->
+            <button class="btn btn-danger login-btn">LOGIN</button>
+    
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <h6 class="text-uppercase">Experience Real Estate On The Go</h6>
+                <h2>Discover. Choose. Own</h2>
+                <p>We are offering the best real estate deals. Buy, sell, and rent properties seamlessly, all in one platform.</p>
+                <button class="btn btn-danger">Get Started</button>
             </div>
-        
-            <!-- Search Form Positioned at the Bottom of Image -->
-            <section class="search-section position-absolute bottom-0 start-50 translate-middle-x w-100">
+    
+            <!-- Search Form for Large Screens -->
+            <section class="search-section d-none d-md-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 offset-md-2">
                             <form>
-                                <div class="row g-3 bg-white p-3 rounded shadow">
+                                <div class="row g-3 bg-dark text-white p-3 rounded shadow">
                                     <div class="col-md-4">
                                         <input type="text" class="form-control" placeholder="Location">
                                     </div>
@@ -82,7 +92,7 @@
                                         </select>
                                     </div>
                                     <div class="col-md-2">
-                                        <button type="submit" class="btn btn-primary w-100">Search</button>
+                                        <button type="submit" class="btn btn-danger w-100">Search</button>
                                     </div>
                                 </div>
                             </form>
@@ -91,29 +101,67 @@
                 </div>
             </section>
         </div>
+    
+        <!-- Search Form for Small Screens -->
+        <section class="search-section-small container d-block d-md-none">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-sm-10">
+                    <form>
+                        <div class="row g-3 bg-dark text-white p-3 rounded shadow">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" placeholder="Location">
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-select">
+                                    <option selected>Category</option>
+                                    <option value="1">Residential</option>
+                                    <option value="2">Commercial</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-select">
+                                    <option selected>Property Type</option>
+                                    <option value="1">Apartment</option>
+                                    <option value="2">House</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-danger w-100">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
         
         <section class="featured-properties py-5">
             <div class="container">
-                <h2 class="text-center mb-5">Crown Jewels of Real Estate: Discover Our Featured Properties</h2>
+                <h2 class="text-center  mb-2 crown-jewels fs-4 fs-md-3 fs-lg-2">
+                    Crown Jewels of Real Estate: Discover Our Featured Properties
+                </h2>
+                <p class="text-center  mb-5 Handpicked fs-6 fs-md-5">
+                    Handpicked properties offering the best in location, design, and investment potential. Find your dream space today!
+                </p>
                 <div class="row g-0"> <!-- Remove gutters between columns -->
                     <!-- Left Column - Single Large Image -->
-                    <div class="col-md-6 p-0">
+                    <div class="col-12 col-md-6 d-flex justify-content-center p-0">
                         <img src="img/Image-1.png" class="img-fluid w-70" alt="Property 1">
                     </div>
         
                     <!-- Right Column - Two columns with two images each -->
-                    <div class="col-md-6 p-2">
+                    <div class="col-12 col-md-6 p-0">
                         <div class="row g-2"> <!-- Small gap between inner images -->
-                            <div class="col-md-6">
+                            <div class=" col-md-6">
                                 <img src="img/Image-2.png" class="img-fluid w-100" alt="Property 2">
                             </div>
-                            <div class="col-md-6">
+                            <div class=" col-md-6">
                                 <img src="img/Image-3.png" class="img-fluid w-100" alt="Property 3">
                             </div>
-                            <div class="col-md-6">
+                            <div class=" col-md-6">
                                 <img src="img/Image-4.png" class="img-fluid w-100" alt="Property 4">
                             </div>
-                            <div class="col-md-6">
+                            <div class=" col-md-6">
                                 <img src="img/Image-6.png" class="img-fluid w-100" alt="Property 5">
                             </div>
                         </div>
@@ -122,7 +170,113 @@
             </div>
         </section>
         
+        <div class="container Features-Build py-5">
+            <div class="row align-items-center">
+                <!-- Left Side: Features -->
+                <div class="col-lg-6">
+                    <h2 class="feature-title mb-4">Features Build For You</h2>
         
+                    <div class="feature-card">
+                        <h5><b>For Clients</b></h5>
+                        <p>Browse thousands of verified listings and connect with trusted agents.</p>
+                        <button class="btn learn-more">Learn More</button>
+                    </div>
+        
+                    <div class="feature-card">
+                        <h5><b>For Property Owners</b></h5>
+                        <p>List your property effortlessly and reach potential buyers fast.</p>
+                        <button class="btn learn-more">Learn More</button>
+                    </div>
+        
+                    <div class="feature-card">
+                        <h5><b>For Agents</b></h5>
+                        <p>Gain visibility, manage listings, and grow your business.</p>
+                        <button class="btn learn-more">Learn More</button>
+                    </div>
+                </div>
+        
+                <!-- Right Side: Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="rounded-circle overflow-hidden" style="width: 300px; height: 300px;">
+                        <img src="img/Cover.png" class="img-fluid" alt="Real Estate">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <h2 class="section-title">Find A Property That Suits You</h2>
+            <p class="text-center">Explore a diverse range of properties tailored to your needs—whether you're buying, selling, or investing.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="property-card">
+                        <img src="img/Screenshot1.png" alt="Property 1">
+                        <h5 class="mt-2">Standalone House with Master Bedroom</h5>
+                        <p><span class="badge bg-danger">Buy: $120,000</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="property-card">
+                        <img src="img/Screenshot1.png" alt="Property 2">
+                        <h5 class="mt-2">3 Bedroomed in Meanwood Ndeke Phase 1</h5>
+                        <p><span class="badge bg-danger">Buy: Low Price</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="property-card">
+                        <img src="img/Screenshot3.png" alt="Property 3">
+                        <h5 class="mt-2">4 Acre Property with 3 Bedroom House</h5>
+                        <p><span class="badge bg-danger">Buy: $250,000</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-primary">View More</button>
+            </div>
+        </div>
+        
+        <!-- About Us Section -->
+        <div class="container-fluid py-5 position-relative text-white" style="
+        background: url('img/young-real-estate-agent-worker-working-with-laptop-tablet-table-office-small-house-beside-itxa\ 1\ \(1\).png') center/cover no-repeat;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="section-title text-white">About Us</h2>
+                    <p>The Broadleaf App is redefining how properties are bought, sold, and rented. Seamless, secure, and built for your convenience.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+        <!-- What Our Users Say (Testimonials) -->
+        <div class="container py-5">
+            <h2 class="section-title">What Our Users Say</h2>
+            <p class="text-center">Join thousands of satisfied agents and clients.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"Professional service and smooth transactions."</p>
+                        <h6 class="mt-3">Rude Tebuho</h6>
+                        <span class="text-muted">Client</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"Incredible experience. Highly recommended!"</p>
+                        <h6 class="mt-3">Jackson Banda</h6>
+                        <span class="text-muted">Agent</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"Broadleaf is a game-changer in real estate."</p>
+                        <h6 class="mt-3">Stephen Singandu</h6>
+                        <span class="text-muted">Agent</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- <div class="webpage">
             <img class="landing-page"  />

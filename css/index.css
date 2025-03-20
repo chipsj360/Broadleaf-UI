@@ -1,16 +1,10 @@
-.hero-image {
+/* .hero-image {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.search-section {
-    bottom: -50px; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    z-index: 10;
-}
+
 
 .bg-white {
     background-color: white;
@@ -22,3 +16,169 @@
         bottom: -30px;
     }
 }
+.search-btn{
+    background-color: #F00;
+} */
+
+
+ /* Hero Section Background */
+ .hero-section {
+    background: url('../img/landing-page.png') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+/* Overlay for Readability */
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Login Button */
+.login-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 3;
+    font-weight: bold;
+}
+
+/* Search Form on Large Screens */
+.search-section {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    z-index: 3;
+}
+
+/* Search Form for Small Screens */
+.search-section-small {
+    display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .search-section {
+        display: none;
+    }
+
+    .search-section-small {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+
+
+.crown-jewels {
+    color: #F00;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px; /* 150% */
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+}
+
+.Handpicked{
+    color: rgba(47, 35, 79, 0.80);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: Montserrat;
+font-size: 19px;
+font-style: normal;
+font-weight: 200;
+line-height: 32px; /* 133.333% */
+}
+.Features-Build{
+    background: rgba(206, 197, 197);
+} 
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+.feature-title {
+    color: #D70000;
+    font-weight: bold;
+}
+.learn-more {
+    border: 1px solid #D70000;
+    color: #D70000;
+}
+.learn-more:hover {
+    background-color: #D70000;
+    color: white;
+}
+.section-title {
+            color: #D70000;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #D70000;
+            border-color: #D70000;
+        }
+        .btn-primary:hover {
+            background-color: #b50000;
+            border-color: #b50000;
+        }
+        .property-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        .property-card img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+
+        
