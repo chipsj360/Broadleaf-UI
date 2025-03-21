@@ -235,7 +235,7 @@
         </div>
         
         <!-- About Us Section -->
-        <div class="container-fluid py-5 position-relative text-white" style="
+        <!-- <div class="container-fluid py-5 position-relative text-white" style="
         background: url('img/young-real-estate-agent-worker-working-with-laptop-tablet-table-office-small-house-beside-itxa\ 1\ \(1\).png') center/cover no-repeat;">
         <div class="container py-5">
             <div class="row align-items-center">
@@ -246,296 +246,120 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
         
-        <!-- What Our Users Say (Testimonials) -->
-        <div class="container py-5">
-            <h2 class="section-title">What Our Users Say</h2>
-            <p class="text-center">Join thousands of satisfied agents and clients.</p>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <p>"Professional service and smooth transactions."</p>
-                        <h6 class="mt-3">Rude Tebuho</h6>
-                        <span class="text-muted">Client</span>
+    <section class="testimonial-section">
+        <h2 class="testimonial-title">What Our Users Say</h2>
+        <p>Join thousands of satisfied agents and clients.</p>
+
+        <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active">
+                    <div class="testimonial-card mx-auto" style="max-width: 500px;">
+                        <p><strong>Professional Partner</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="img/Profile.png" alt="User 1">
+                        <p><strong>Rudo Tebulo</strong><br><span class="text-danger">Client</span></p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <p>"Incredible experience. Highly recommended!"</p>
-                        <h6 class="mt-3">Jackson Banda</h6>
-                        <span class="text-muted">Agent</span>
+
+                <!-- Testimonial 2 -->
+                <div class="carousel-item">
+                    <div class="testimonial-card mx-auto" style="max-width: 500px;">
+                        <p><strong>Incredible Experience</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="img/Profile 3 (2).png" alt="User 2">
+                        <p><strong>Jackson Banda</strong><br><span class="text-danger">Agent</span></p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <p>"Broadleaf is a game-changer in real estate."</p>
-                        <h6 class="mt-3">Stephen Singandu</h6>
-                        <span class="text-muted">Agent</span>
+
+                <!-- Testimonial 3 -->
+                <div class="carousel-item">
+                    <div class="testimonial-card mx-auto" style="max-width: 500px;">
+                        <p><strong>Dependable & Responsive</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="img/Profile 3 (1).png" alt="User 3">
+                        <p><strong>Stephen S’ingandu</strong><br><span class="text-danger">Agent</span></p>
                     </div>
+                </div>
+            </div>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Mobile App Section -->
+    <section class="download-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="download-text">Experience Real Estate On The Go</p>
+                    <h2 class="download-title">DOWNLOAD THE MOBILE APP</h2>
+                    <div class="app-buttons">
+                        <img src="img/Google.png" alt="Google Play">
+                        <img src="img/Apple.png" alt="App Store">
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="col-md-6 text-center">
+                    <img src="img/app download.png" class="img-fluid" alt="Mobile App">
                 </div>
             </div>
         </div>
+    </section>
+    <section class="subscribe-section d-flex justify-content-center justify-content-lg-end">
+        <div class="text-lg-end text-center">
+            <h2 class="text-center">Don’t Miss A Thing!</h2>
+            <p>Subscribe with Email and loads of interesting news will be sent to you on a daily basis.</p>
+            <div class="input-group subscribe-input">
+                <input type="email" class="form-control" placeholder="Your email here">
+                <button class="btn btn-dark">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    
 
-        <!-- <div class="webpage">
-            <img class="landing-page"  />
-            <div class="featured-properties">
-                <div class="overlap">
-                    <div class="overlap-group">
-                        <div class="title-description">
-                            <p class="title">Crown Jewels Of Real Estate: Discover Our Featured Properties</p>
-                            <p class="description">
-                                Handpicked properties offering the best in location, design, and investment potential. Find your dream
-                                space today!
-                            </p>
-                            <div class="frame"></div>
-                        </div>
-                        <img class="imagw" src="img/imagw-1.png" />
-                        <img class="image" src="img/image-3.png" />
-                        <img class="img" src="img/image-2.png" />
-                    </div>
-                    <img class="image-2" src="img/image-6.png" />
-                    <img class="image-3" src="img/image-4.png" />
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo & Slogan -->
+                <div class="col-md-4 footer-logo">
+                    <img src="img/Broadleaf.png" alt="Broadleaf Urban Properties">
+                    <p>Discover . Choose . Own</p>
+                    <p>Real Estate Re-Imagined</p>
+                </div>
+
+                <!-- More Information Links -->
+                <div class="col-md-4">
+                    <h5>More Information</h5>
+                    <p><a href="#">About Us</a></p>
+                    <p><a href="#">Properties</a></p>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Services</a></p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p>Plot 32 Chekeluka Road, Lusaka, Zambia</p>
+                    <p><strong>Phone:</strong> (+260) 772 182 590</p>
+                    <p><strong>Email:</strong> info@broadleafhomes.co.zm</p>
+                    <p><strong>Website:</strong> broadleafhomes.co.zm</p>
                 </div>
             </div>
-            <div class="our-feature">
-                <div class="div">
-                    <div class="wrapper">
-                        <div class="cards-content">
-                            <div class="card">
-                                <div class="headline">For Clients</div>
-                                <p class="text-wrapper">Browse thousands of verified listings and connect with trusted agents.</p>
-                                <button class="button-text-only"><div class="text">Learn More</div></button>
-                            </div>
-                            <div class="card">
-                                <div class="headline-2">For Property Owners</div>
-                                <p class="text-wrapper">List your property effortlessly and reach potential buyers fast.</p>
-                                <button class="button-text-only"><div class="text">Learn More</div></button>
-                            </div>
-                            <div class="card">
-                                <div class="headline-2">For Agents</div>
-                                <button class="button-text-only"><div class="text">Learn More</div></button>
-                                <p class="text-wrapper">Gain visibility, manage listings, and grow your business.</p>
-                            </div>
-                        </div>
-                        <img class="cover" src="img/Cover.png" />
-                    </div>
-                    <div class="title-2">Features Build For You</div>
-                </div>
-            </div>
-            <div class="recent-properties">
-                <div class="title-description-2">
-                    <p class="title-3">Find A Property The Suits You</p>
-                    <p class="description">
-                        Explore a diverse range of properties tailored to your needs—whether you&#39;re buying, selling, or
-                        investing.
-                    </p>
-                </div>
-                <div class="content-wrapper">
-                    <img class="screenshot" src="img/screenshot1.png" />
-                    <img class="screenshot-2" src="img/screenshot2.png" />
-                    <img class="screenshot-3" src="img/screenshot3.png" />
-                </div>
-                <button class="div-wrapper"><div class="text-2">View more</div></button>
-                <div class="rectangle"></div>
-            </div>
-            <div class="team">
-                <div class="overlap-2">
-                    <img
-                        class="young-real-estate"
-                        src="img/young-real-estate-agent-worker-working-with-laptop-tablet-table-office-small-house-beside-itxa-1.png"
-                    />
-                    <div class="title-wrapper"><div class="title-3">About Us</div></div>
-                    <p class="p">
-                        The Broadleaf App is redefining how properties are bought, sold, and rented. Seamless, secure, and built for
-                        your convenience.
-                    </p>
-                    <button class="button"><div class="text-3">Learn More</div></button>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="title-description-3">
-                    <div class="title-3">What Our Users Say</div>
-                    <p class="description">Join thousands of satisfied agents and clients.</p>
-                </div>
-                <div class="clients-testimonials">
-                    <div class="testimonial-2">
-                        <div class="overlap-group-wrapper">
-                            <div class="overlap-group-2">
-                                <img class="quote-mark" src="img/quote-mark-3.svg" />
-                                <div class="title-description-4">
-                                    <div class="description-2">Professional Partner</div>
-                                    <p class="description-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magna pharetra in amet
-                                        porta enim.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="client">
-                            <div class="profile"><img class="profile-2" src="img/profile.png" /></div>
-                            <div class="client-details">
-                                <div class="title-4">Rudo Tebulo</div>
-                                <div class="subtitle">Client</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-3">
-                        <div class="overlap-group-wrapper">
-                            <div class="overlap-group-3">
-                                <img class="quote-mark" src="img/quote-mark.svg" />
-                                <div class="title-description-4">
-                                    <div class="description-2">Incredible Experience</div>
-                                    <p class="description-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magna pharetra in amet
-                                        porta enim.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="client">
-                            <div class="profile"><img class="profile-2" src="img/profile2.png" /></div>
-                            <div class="client-details">
-                                <div class="title-4">Jackson Banda</div>
-                                <div class="subtitle">Agent</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-3">
-                        <div class="overlap-group-wrapper">
-                            <div class="overlap-group-4">
-                                <img class="quote-mark" src="img/quote-mark-2.svg" />
-                                <div class="title-description-4">
-                                    <div class="description-2">Dependable &amp; Responsive</div>
-                                    <p class="description-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magna pharetra in amet
-                                        porta enim.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="client">
-                            <div class="profile"><img class="profile-2" src="img/image.png" /></div>
-                            <div class="client-details">
-                                <div class="title-4">Stephen S’ingandu</div>
-                                <div class="subtitle">Agent</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dots">
-                    <div class="outlined"></div>
-                    <div class="dot"></div>
-                    <div class="outlined"></div>
-                </div>
-            </div>
-            <div class="download">
-                <div class="overlap-3">
-                    <img class="app-download" src="img/app download.png" />
-                    <div class="content-CTA">
-                        <div class="div-2">
-                            <div class="title-5">
-                                <div class="hr-line-label">
-                                    <img class="line" src="img/line-1.svg" />
-                                    <p class="label">Experience Real Estate On The Go</p>
-                                </div>
-                                <div class="title-6">Download The Mobile App</div>
-                            </div>
-                        </div>
-                        <img class="img-2" src="img/Google.png" />
-                        <img class="img-2" src="img/Apple.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="CTA">
-                <div class="shapes">
-                    <div class="overlap-group-5">
-                        <div class="rectangle-2"></div>
-                        <div class="rectangle-3"></div>
-                    </div>
-                </div>
-                <div class="subscribe-wrapper">
-                    <div class="div-3">
-                        <div class="title-7">Don’t Miss A Thing!</div>
-                        <p class="description-4">
-                            Subscribe with Email and loads of interesting news will be sent to you on a daily basis.
-                        </p>
-                    </div>
-                    <div class="input">
-                        <div class="input-2"><input class="content" placeholder="Your email here" type="email" /></div>
-                        <button class="button-text-only-2"><div class="text-4">Subscribe</div></button>
-                    </div>
-                </div>
-            </div>
-            <footer class="footer">
-                <div class="overlap-4">
-                    <div class="logo-description">
-                        <img class="asset" src="img/Broadleaf.png" />
-                        <p class="description-5">Discover . Choose . Own<br /><br />Real Estate Re-Imagined</p>
-                    </div>
-                    <div class="content-2">
-                        <div class="text-wrapper-2">Contact Info</div>
-                        <div class="div-2">
-                            <p class="plot-chekeluka">Plot 32 Chekeluka Road, Luasaka<br />Zambia</p>
-                            <div class="div-3">
-                                <p class="phone">
-                                    <span class="span">Phone:</span> <span class="text-wrapper-3"> (+260) 772 182 590</span>
-                                </p>
-                                <p class="div-4">
-                                    <span class="span">Email:</span> <span class="text-wrapper-3"> info@broadleafhomes.co.zm</span>
-                                </p>
-                                <p class="div-4">
-                                    <span class="span">Website:</span> <span class="text-wrapper-3"> broadleafhomes.co.zm</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-3">
-                        <div class="text-wrapper-2">More Information</div>
-                        <div class="div-2">
-                            <div class="text-wrapper-4">About Us</div>
-                            <div class="div-3">
-                                <div class="text-wrapper-4">Properties</div>
-                                <div class="text-wrapper-5">Blog</div>
-                                <div class="text-wrapper-5">Services</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div> -->
-        <!-- <footer class="footer py-5 bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5>Contact Info</h5>
-                        <p>Plot 32 Chekeluka Road, Lusaka, Zambia</p>
-                        <p>Phone: (+260) 772 182 590</p>
-                        <p>Email: info@broadleafhomes.co.zm</p>
-                        <p>Website: broadleafhomes.co.zm</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>More Information</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Properties</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Services</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Subscribe</h5>
-                        <form>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Your email here">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </footer> -->
+        </div>
+    </footer>
+       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
